@@ -1,37 +1,80 @@
 <!DOCTYPE html>  
 <html>  
      <head>  
-          <title>Webslesson Tutorial | Search HTML Table Data by using JQuery</title>  
+          <title>Table Data using JQuery</title>  
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>  
+          <link rel="styles.css">
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-          <link rel="script.js">  
+          <link rel="script.js">
+            
      </head>  
      <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v14.0&appId=438572258184152&autoLogAppEvents=1" nonce="QztOOLTu"></script>
-<script>
-     <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '{your-app-id}',
-      cookie     : true,
-      xfbml      : true,
-      version    : '{api-version}'
-    });
-      
-    FB.AppEvents.logPageView();   
-      
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "https://connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
-     <body>  
+     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v14.0&appId=438572258184152&autoLogAppEvents=1" nonce="QztOOLTu"></script>
+     <script>
+          <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
+       window.fbAsyncInit = function() {
+         FB.init({
+           appId      : '{your-app-id}',
+           cookie     : true,
+           xfbml      : true,
+           version    : '{api-version}'
+         });
+           
+         FB.AppEvents.logPageView();   
+           
+       };
+     
+       (function(d, s, id){
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) {return;}
+          js = d.createElement(s); js.id = id;
+          js.src = "https://connect.facebook.net/en_US/sdk.js";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+     </script>
+     <div class="container">
+               <form action="/action_page.php">
+                 <div class="row">
+                                
+                   <div class="col">
+                     <a href="#" class="fb btn">
+                       <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                     </a>
+                     <a href="#" class="twitter btn">
+                       <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+                     </a>
+                     <a href="#" class="google btn">
+                       <i class="fa fa-google fa-fw"></i> Login with Google+
+                     </a>
+                   </div>
+             
+                   <div class="col">
+                     <div class="hide-md-lg">
+                       <p>Or sign in manually:</p>
+                     </div>
+             
+                     <input type="text" name="username" placeholder="Username" required>
+                     <input type="password" name="password" placeholder="Password" required>
+                     <input type="submit" value="Login">
+                   </div>
+             
+                 </div>
+               </form>
+             </div>
+             
+             <div class="bottom-container">
+               <div class="row">
+                 <div class="col">
+                   <a href="#" style="color:white" class="btn">Sign up</a>
+                 </div>
+                 <div class="col">
+                   <a href="#" style="color:white" class="btn">Forgot password?</a>
+                 </div>
+               </div>
+             </div>
+     <body>
+          
           <br /><br />  
           <div class="container" style="width:900px;">  
                <h2 align="center">Search HTML Table Data by using JQuery</h2>  
